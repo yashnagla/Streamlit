@@ -20,7 +20,7 @@ def predict(experience):
     '''
     # exp = float(request.args.get('exp'))
 
-    prediction =int(model.predict([[experience]]))
+    prediction =model.predict([[experience]])
     
         
     # return render_template('index.html', prediction_text='Regression Model  has predicted salary for given experinace is Rs.  : {}'.format(prediction))
