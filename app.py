@@ -36,7 +36,7 @@ def main():
     """
 
     st.markdown(html_temp,unsafe_allow_html=True)
-    exp = st.number_input('Experience', 2, 40)
+    exp = st.number_input('Experience', 0)
     result=""
     if st.button("Predict"):
         result=predict(float(exp))
